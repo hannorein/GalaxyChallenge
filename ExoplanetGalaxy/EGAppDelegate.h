@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GalaxyViewController.h"
 
 @class EGViewController;
 
@@ -14,6 +15,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) EGViewController *viewController;
+@property (strong, nonatomic) GalaxyViewController *viewController;
 
 @end

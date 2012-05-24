@@ -15,11 +15,14 @@
 		376C7C4A156DCE460002D3F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 376C7C48156DCE460002D3F3 /* InfoPlist.strings */; };
 		376C7C4C156DCE460002D3F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 376C7C4B156DCE460002D3F3 /* main.m */; };
 		376C7C50156DCE460002D3F3 /* EGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 376C7C4F156DCE460002D3F3 /* EGAppDelegate.m */; };
-		376C7C52156DCE460002D3F3 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 376C7C51156DCE460002D3F3 /* Shader.fsh */; };
-		376C7C54156DCE460002D3F3 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 376C7C53156DCE460002D3F3 /* Shader.vsh */; };
-		376C7C57156DCE460002D3F3 /* EGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 376C7C56156DCE460002D3F3 /* EGViewController.m */; };
-		376C7C5A156DCE460002D3F3 /* EGViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376C7C58156DCE460002D3F3 /* EGViewController_iPhone.xib */; };
-		376C7C5D156DCE460002D3F3 /* EGViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376C7C5B156DCE460002D3F3 /* EGViewController_iPad.xib */; };
+		376C7C6B156DCF360002D3F3 /* GalaxyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 376C7C64156DCF360002D3F3 /* GalaxyViewController.m */; };
+		376C7C6C156DCF360002D3F3 /* EAGLGalaxyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 376C7C66156DCF360002D3F3 /* EAGLGalaxyView.m */; };
+		376C7C6D156DCF360002D3F3 /* StarData.m in Sources */ = {isa = PBXBuildFile; fileRef = 376C7C68156DCF360002D3F3 /* StarData.m */; };
+		376C7C6E156DCF360002D3F3 /* StarDataGalaxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 376C7C6A156DCF360002D3F3 /* StarDataGalaxy.m */; };
+		376C7C71156DD0760002D3F3 /* Texture2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 376C7C70156DD0760002D3F3 /* Texture2D.m */; };
+		376C7C77156DD0EC0002D3F3 /* GLSharedContextWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 376C7C76156DD0EC0002D3F3 /* GLSharedContextWrapper.m */; };
+		376C7C79156DD3CE0002D3F3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376C7C78156DD3CE0002D3F3 /* QuartzCore.framework */; };
+		376C7C7B156DD53E0002D3F3 /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 376C7C7A156DD53E0002D3F3 /* texture.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,12 +38,20 @@
 		376C7C4D156DCE460002D3F3 /* ExoplanetGalaxy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExoplanetGalaxy-Prefix.pch"; sourceTree = "<group>"; };
 		376C7C4E156DCE460002D3F3 /* EGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGAppDelegate.h; sourceTree = "<group>"; };
 		376C7C4F156DCE460002D3F3 /* EGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGAppDelegate.m; sourceTree = "<group>"; };
-		376C7C51156DCE460002D3F3 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
-		376C7C53156DCE460002D3F3 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
-		376C7C55156DCE460002D3F3 /* EGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGViewController.h; sourceTree = "<group>"; };
-		376C7C56156DCE460002D3F3 /* EGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGViewController.m; sourceTree = "<group>"; };
-		376C7C59156DCE460002D3F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/EGViewController_iPhone.xib; sourceTree = "<group>"; };
-		376C7C5C156DCE460002D3F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/EGViewController_iPad.xib; sourceTree = "<group>"; };
+		376C7C63156DCF360002D3F3 /* GalaxyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalaxyViewController.h; sourceTree = "<group>"; };
+		376C7C64156DCF360002D3F3 /* GalaxyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalaxyViewController.m; sourceTree = "<group>"; };
+		376C7C65156DCF360002D3F3 /* EAGLGalaxyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLGalaxyView.h; sourceTree = "<group>"; };
+		376C7C66156DCF360002D3F3 /* EAGLGalaxyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLGalaxyView.m; sourceTree = "<group>"; };
+		376C7C67156DCF360002D3F3 /* StarData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarData.h; sourceTree = "<group>"; };
+		376C7C68156DCF360002D3F3 /* StarData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarData.m; sourceTree = "<group>"; };
+		376C7C69156DCF360002D3F3 /* StarDataGalaxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarDataGalaxy.h; sourceTree = "<group>"; };
+		376C7C6A156DCF360002D3F3 /* StarDataGalaxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarDataGalaxy.m; sourceTree = "<group>"; };
+		376C7C6F156DD0760002D3F3 /* Texture2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Texture2D.h; sourceTree = "<group>"; };
+		376C7C70156DD0760002D3F3 /* Texture2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Texture2D.m; sourceTree = "<group>"; };
+		376C7C75156DD0EC0002D3F3 /* GLSharedContextWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLSharedContextWrapper.h; sourceTree = "<group>"; };
+		376C7C76156DD0EC0002D3F3 /* GLSharedContextWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLSharedContextWrapper.m; sourceTree = "<group>"; };
+		376C7C78156DD3CE0002D3F3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		376C7C7A156DD53E0002D3F3 /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				376C7C79156DD3CE0002D3F3 /* QuartzCore.framework in Frameworks */,
 				376C7C3C156DCE460002D3F3 /* UIKit.framework in Frameworks */,
 				376C7C3E156DCE460002D3F3 /* Foundation.framework in Frameworks */,
 				376C7C40156DCE460002D3F3 /* CoreGraphics.framework in Frameworks */,
@@ -62,6 +74,7 @@
 		376C7C2C156DCE460002D3F3 = {
 			isa = PBXGroup;
 			children = (
+				376C7C78156DD3CE0002D3F3 /* QuartzCore.framework */,
 				376C7C45156DCE460002D3F3 /* ExoplanetGalaxy */,
 				376C7C3A156DCE460002D3F3 /* Frameworks */,
 				376C7C38156DCE460002D3F3 /* Products */,
@@ -93,12 +106,13 @@
 			children = (
 				376C7C4E156DCE460002D3F3 /* EGAppDelegate.h */,
 				376C7C4F156DCE460002D3F3 /* EGAppDelegate.m */,
-				376C7C51156DCE460002D3F3 /* Shader.fsh */,
-				376C7C53156DCE460002D3F3 /* Shader.vsh */,
-				376C7C55156DCE460002D3F3 /* EGViewController.h */,
-				376C7C56156DCE460002D3F3 /* EGViewController.m */,
-				376C7C58156DCE460002D3F3 /* EGViewController_iPhone.xib */,
-				376C7C5B156DCE460002D3F3 /* EGViewController_iPad.xib */,
+				376C7C63156DCF360002D3F3 /* GalaxyViewController.h */,
+				376C7C64156DCF360002D3F3 /* GalaxyViewController.m */,
+				376C7C65156DCF360002D3F3 /* EAGLGalaxyView.h */,
+				376C7C66156DCF360002D3F3 /* EAGLGalaxyView.m */,
+				376C7C7A156DD53E0002D3F3 /* texture.png */,
+				376C7C7C156DD56A0002D3F3 /* StarData */,
+				376C7C7D156DD5770002D3F3 /* OpenGL Tools */,
 				376C7C46156DCE460002D3F3 /* Supporting Files */,
 			);
 			path = ExoplanetGalaxy;
@@ -113,6 +127,28 @@
 				376C7C4D156DCE460002D3F3 /* ExoplanetGalaxy-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		376C7C7C156DD56A0002D3F3 /* StarData */ = {
+			isa = PBXGroup;
+			children = (
+				376C7C67156DCF360002D3F3 /* StarData.h */,
+				376C7C68156DCF360002D3F3 /* StarData.m */,
+				376C7C69156DCF360002D3F3 /* StarDataGalaxy.h */,
+				376C7C6A156DCF360002D3F3 /* StarDataGalaxy.m */,
+			);
+			name = StarData;
+			sourceTree = "<group>";
+		};
+		376C7C7D156DD5770002D3F3 /* OpenGL Tools */ = {
+			isa = PBXGroup;
+			children = (
+				376C7C6F156DD0760002D3F3 /* Texture2D.h */,
+				376C7C70156DD0760002D3F3 /* Texture2D.m */,
+				376C7C75156DD0EC0002D3F3 /* GLSharedContextWrapper.h */,
+				376C7C76156DD0EC0002D3F3 /* GLSharedContextWrapper.m */,
+			);
+			name = "OpenGL Tools";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,10 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				376C7C4A156DCE460002D3F3 /* InfoPlist.strings in Resources */,
-				376C7C52156DCE460002D3F3 /* Shader.fsh in Resources */,
-				376C7C54156DCE460002D3F3 /* Shader.vsh in Resources */,
-				376C7C5A156DCE460002D3F3 /* EGViewController_iPhone.xib in Resources */,
-				376C7C5D156DCE460002D3F3 /* EGViewController_iPad.xib in Resources */,
+				376C7C7B156DD53E0002D3F3 /* texture.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,7 +216,12 @@
 			files = (
 				376C7C4C156DCE460002D3F3 /* main.m in Sources */,
 				376C7C50156DCE460002D3F3 /* EGAppDelegate.m in Sources */,
-				376C7C57156DCE460002D3F3 /* EGViewController.m in Sources */,
+				376C7C6B156DCF360002D3F3 /* GalaxyViewController.m in Sources */,
+				376C7C6C156DCF360002D3F3 /* EAGLGalaxyView.m in Sources */,
+				376C7C6D156DCF360002D3F3 /* StarData.m in Sources */,
+				376C7C6E156DCF360002D3F3 /* StarDataGalaxy.m in Sources */,
+				376C7C71156DD0760002D3F3 /* Texture2D.m in Sources */,
+				376C7C77156DD0EC0002D3F3 /* GLSharedContextWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,22 +234,6 @@
 				376C7C49156DCE460002D3F3 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		376C7C58156DCE460002D3F3 /* EGViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				376C7C59156DCE460002D3F3 /* en */,
-			);
-			name = EGViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		376C7C5B156DCE460002D3F3 /* EGViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				376C7C5C156DCE460002D3F3 /* en */,
-			);
-			name = EGViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
