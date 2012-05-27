@@ -7,14 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GalaxyViewController.h"
 
 @class EGViewController;
 
 @interface EGAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) GalaxyViewController *viewController;
 
 @end

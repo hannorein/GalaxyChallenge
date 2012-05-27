@@ -7,40 +7,24 @@
 //
 
 #import "EGAppDelegate.h"
-#import "GalaxyViewController.h"
-#import "GLSharedContextWrapper.h"
+#import "UniverseViewController.h"
 @implementation EGAppDelegate
 
 @synthesize window = _window;
-@synthesize viewController = _viewController;
 
-- (void)dealloc
-{
+- (void)dealloc{
     [_window release];
-    [_viewController release];
     [super dealloc];
 }
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    [self loadSharedContext];
+    self.window.rootViewController = [[[UniverseViewController alloc] init] autorelease];
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 
--(void)loadSharedContext{
-	if(glSharedContextWrapper==nil){
-		[GLSharedContextWrapper initSingleton];
-		[glSharedContextWrapper performSelectorInBackground:@selector(load) withObject:nil];	
-	}else{
-		[self loadSharedContextDone];
-	}
-}
 
--(void)loadSharedContextDone{
-    self.viewController = [[[GalaxyViewController alloc] init] autorelease];
-    self.window.rootViewController = self.viewController;
-    [self.window makeKeyAndVisible];
-}
 
 @end
